@@ -372,6 +372,7 @@ width:0;
 }
 .AD_TRUE{
   width: 47.3%;
+  background-color: deepskyblue;
 }
 
 
@@ -415,11 +416,16 @@ width:0;
     }
     .AD_TRUE{
       width: 47.3%;
+      background-color: deepskyblue;
     }
 
 }
-
 @media (max-width:1229px) {
+
+    .AD_TRUE{
+      width: 100%;
+      background-color: deepskyblue;
+    }
     .tile {
         height:335px;
 
@@ -432,18 +438,12 @@ width:0;
         padding-bottom:40px;
     }
 }
-
-@media (max-width:1229px) {
-    .tile {
-        height:335px;
-        width:30%;
-    }
-    label {
-        width:30%;
-    }
-}
-
 @media (max-width:780px) {
+  .AD_TRUE{
+    width: 100%;
+    background-color: deepskyblue;
+  }
+
     .tile {
         width:45%;
 
@@ -456,8 +456,16 @@ width:0;
         padding-bottom:40px;
         font-size:12px;
     }
+    .AD_TRUE{
+      width: 100%;
+      background-color: deepskyblue;
+    }
 }
 @media (max-width:545px) {
+  .AD_TRUE{
+    width: 100%;
+    background-color: deepskyblue;
+  }
     .tile {
         width:100%;
         height:300px;
@@ -476,6 +484,7 @@ width:0;
         font-size:10px;
 
         }
+
 
 
 

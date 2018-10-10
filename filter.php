@@ -19,7 +19,7 @@
 
 <!--Connect to db php-->
 <?php include 'connection.php';
-$cat1 = "SELECT catname FROM categories where catno = 1 order by catno desc";
+$cat1 = "SELECT catname FROM categories where catno = 1 order by ad asc, catno desc";
 $username = USERNAME; //defined in conenction.php
 $password = PASSWORD; //defines in connection.php
 // Create connection
@@ -127,7 +127,7 @@ $( ".lb7" ).click(function() {	$( ".cat8,.cat9,.cat10,.cat11,.cat12,.cat13,.cat1
 
    <?php
     /*variables*/
-	  $sql = "SELECT nr,name,telephone,ad,website,catno,ekstra FROM company order by catno asc";
+	  $sql = "SELECT nr,name,telephone,ad,website,catno,ekstra FROM company order by ad desc, catno asc";
       $sqlcat1 = "SELECT nr,name,telephone,website,catno from company where catno = 1";
 	  $result = $conn->query($sql);
 	  $catno= $row["catno"];
