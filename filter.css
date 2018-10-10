@@ -372,6 +372,7 @@ width:0;
 }
 .AD_TRUE{
   width: 47.3%;
+  background-color: deepskyblue;
 }
 
 
@@ -415,6 +416,7 @@ width:0;
     }
     .AD_TRUE{
       width: 47.3%;
+      background-color: deepskyblue;
     }
 
 }
@@ -433,6 +435,7 @@ width:0;
     }
     .AD_TRUE{
       width: 100%;
+      background-color: deepskyblue;
     }
 }
 
@@ -446,6 +449,7 @@ width:0;
     }
     .AD_TRUE{
       width: 100%;
+      background-color: deepskyblue;
     }
 }
 
@@ -464,6 +468,7 @@ width:0;
     }
     .AD_TRUE{
       width: 100%;
+      background-color: deepskyblue;
     }
 }
 @media (max-width:545px) {
@@ -487,6 +492,7 @@ width:0;
         }
         .AD_TRUE{
           width: 100%;
+          background-color: deepskyblue;
         }
 
 

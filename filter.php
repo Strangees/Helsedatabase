@@ -19,7 +19,7 @@
 
 <!--Connect to db php-->
 <?php include 'connection.php';
-$cat1 = "SELECT catname FROM categories where catno = 1 order by catno desc";
+$cat1 = "SELECT catname FROM categories where catno = 1 order by ad asc, catno desc";
 $username = USERNAME; //defined in conenction.php
 $password = PASSWORD; //defines in connection.php
 // Create connection
