@@ -15,7 +15,6 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
 <title>Health</title>
-
 </head>
 
 <!--Connect to db php-->
@@ -26,6 +25,7 @@ $password = PASSWORD; //defines in connection.php
 // Create connection
 $conn = new mysqli("localhost", $username, $password, "stianstrange_no");
 // Check connection
+//test
 if ($conn->connect_error) {
    die("Connection failed: " . $conn->connect_error);
 }
