@@ -1,4 +1,4 @@
 <?php
 define('USERNAME', 'stianstrange_no');
-define('PASSWORD', 'RagnhildDB');
+define('PASSWORD', 'Ett2tre');
  ?>
