@@ -10,8 +10,11 @@
 <meta name="Author" CONTENT="SWC, Stranges Web Consult 2018">
 <meta name="Source" CONTENT="http://innovatoriet.hbv.no/getfile.php/13416617/innovatoriet.hbv.no/Filer/8.5.17%20Liste%20leverand%C3%B8rer%20Innovatoriet%281%29.pdf">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="filter.css" rel="stylesheet" type="text/css">
-
+<link rel="stylesheet" href="/css/filter.css">
+<link rel="stylesheet" href="/css/materialize.css">
+<link rel="stylesheet" href="/css/materialize.min.css">
+<script src="/js/materialize.js" charset="utf-8"></script>
+<script src="/js/materialize.min.js" charset="utf-8"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript">
 $('document').ready(function () {
@@ -163,6 +166,21 @@ $conn->close();
 });
 	</script>
   </section>
+  <div class="row">
+  <div class="col s12 m6">
+    <div class="card blue-grey darken-1">
+      <div class="card-content white-text">
+        <span class="card-title">Card Title</span>
+        <p>I am a very simple card. I am good at containing small bits of information.
+        I am convenient because I require little markup to use effectively.</p>
+      </div>
+      <div class="card-action">
+        <a href="#">This is a link</a>
+        <a href="#">This is a link</a>
+      </div>
+    </div>
+  </div>
+</div>
 </div>
 </body>
 </html>
