@@ -11,8 +11,8 @@
 <meta name="Source" CONTENT="http://innovatoriet.hbv.no/getfile.php/13416617/innovatoriet.hbv.no/Filer/8.5.17%20Liste%20leverand%C3%B8rer%20Innovatoriet%281%29.pdf">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/filter.css">
-<link rel="stylesheet" href="css/materialize.css">
-<link rel="stylesheet" href="css/materialize.min.css">
+<!--<link rel="stylesheet" href="css/materialize.css">-->
+<!--<link rel="stylesheet" href="css/materialize.min.css">-->
 <script src="js/materialize.js" charset="utf-8"></script>
 <script src="js/materialize.min.js" charset="utf-8"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
