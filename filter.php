@@ -11,9 +11,12 @@
 <meta name="Source" CONTENT="http://innovatoriet.hbv.no/getfile.php/13416617/innovatoriet.hbv.no/Filer/8.5.17%20Liste%20leverand%C3%B8rer%20Innovatoriet%281%29.pdf">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="filter.css" rel="stylesheet" type="text/css">
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+$('document').ready(function () {
+  $( $.parseHTML( "<h5>ANNONSE</h5>" ) ).appendTo(".AD_TRUE")
+});
+</script>
 <title>Health</title>
 </head>
 
