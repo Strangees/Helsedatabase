@@ -27,7 +27,7 @@ $cat1 = "SELECT catname FROM categories where catno = 1 order by ad asc, catno d
 $username = USERNAME; //defined in conenction.php
 $password = PASSWORD; //defines in connection.php
 // Create connection
-$conn = new mysqli("localhost", $username, $password, "stianstrange_no");
+$conn = new mysqli("localhost", $username, $password, "swc_one");
 // Check connection
 //test
 if ($conn->connect_error) {
