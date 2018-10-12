@@ -137,10 +137,10 @@ $( ".lb7" ).click(function() {	$( ".cat8,.cat9,.cat10,.cat11,.cat12,.cat13,.cat1
 	  $catno= $row["catno"];
 	  $c = "<div class= tile cat1>";
 	 /*Output data from DB*/
- //if ($result->num_rows > 0) {
+ if ($result->num_rows > 0) {
     // output data of each row
 
-    /*while($row = $result->fetch_assoc()) {
+    while($row = $result->fetch_assoc()) {
 		echo
 		"<a href=".$row["website"]." target=_blank><div class= \"tile ".$row["nr"]." ". "cat".$row["catno"]." AD_".$row["ad"]." \">".
 		"<h1>".$row["name"]."</h1>".
@@ -155,7 +155,7 @@ else {
     echo "Ingen resultater";
 }
 $conn->close();
-*/
+
 	  ?>
 <script>
 	// Document is ready.
@@ -168,21 +168,5 @@ $conn->close();
 
 	</script>
   </section>
-  <div class="row">
-  <div class="col s12 m6">
-    <div class="card blue-grey darken-1">
-      <div class="card-content white-text">
-        <span class="card-title">Card Title</span>
-        <p>I am a very simple card. I am good at containing small bits of information.
-        I am convenient because I require little markup to use effectively.</p>
-      </div>
-      <div class="card-action">
-        <a href="#">This is a link</a>
-        <a href="#">This is a link</a>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
 </body>
 </html>
