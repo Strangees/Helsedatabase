@@ -126,9 +126,6 @@ $( ".lb7" ).click(function() {	$( ".cat8,.cat9,.cat10,.cat11,.cat12,.cat13,.cat1
 		});
 	 </script>
 </section>
-
-
-
    <?php
     /*variables*/
 	  $sql = "SELECT nr,name,telephone,ad,website,catno,ekstra FROM company order by ad desc, catno asc";
