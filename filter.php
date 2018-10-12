@@ -7,7 +7,7 @@
 <meta charset="utf-8">
 <meta name="Description" CONTENT="Denne nettsiden er ment for å forenkle hvordan man finner frem til riktig leverandør av diverse hjelpemidler">
 <title>Dabasen for leverandører innen hjelpemidler</title>
-<meta name="Author" CONTENT="Stian Strange, 2017">
+<meta name="Author" CONTENT="SWC, Stranges Web Consult 2018">
 <meta name="Source" CONTENT="http://innovatoriet.hbv.no/getfile.php/13416617/innovatoriet.hbv.no/Filer/8.5.17%20Liste%20leverand%C3%B8rer%20Innovatoriet%281%29.pdf">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="filter.css" rel="stylesheet" type="text/css">
