@@ -134,9 +134,7 @@ $( ".lb7" ).click(function() {	$( ".cat8,.cat9,.cat10,.cat11,.cat12,.cat13,.cat1
 	  $catno= $row["catno"];
 	  $c = "<div class= tile cat1>";
 	 /*Output data from DB*/
-
 if ($result->num_rows > 0) {
-
     // output data of each row
 
     while($row = $result->fetch_assoc()) {
