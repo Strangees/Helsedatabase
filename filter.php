@@ -152,18 +152,12 @@ if ($result->num_rows > 0) {
 		</div></a>";
     }
 }
-
 else {
 
     echo "Ingen resultater";
 }
 $conn->close();
-
 	  ?>
-
-
-  	   	  	 <!--Manual adding in cards-->
-
 <script>
 	// Document is ready.
 	$.when( $.ready ).then(function()
@@ -172,18 +166,8 @@ $conn->close();
 		$( "<a href=http://www.handsteady.com>").appendTo (".1");
 		console.info ("websiden har manuelt lagt til paragrafer i cards");
 });
-
-
 	</script>
   </section>
 </div>
-
-
-
-
-
-
-
 </body>
-
 </html>
