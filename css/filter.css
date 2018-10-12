@@ -1,6 +1,29 @@
 @charset "utf-8";
 /* CSS Document */
 
+.card{
+position: relative;
+margin: 0.5rem 0 1rem 0;
+background-color: #fff;
+-webkit-transition: -webkit-box-shadow .25s;
+transition: -webkit-box-shadow .25s;
+transition: box-shadow .25s;
+transition: box-shadow .25s, -webkit-box-shadow .25s;
+border-radius: 2px;
+}
+.card .cardaction{
+background-color: inherit;
+border-top: 1px solid rgba(160, 160, 160, 0.2);
+position: relative;
+padding: 16px 24px;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
+    color: #ffab40;
+    margin-right: 24px;
+    -webkit-transition: color .3s ease;
+    transition: color .3s ease;
+    text-transform: uppercase;}
 
 
 
