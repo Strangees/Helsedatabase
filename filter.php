@@ -141,13 +141,28 @@ $( ".lb7" ).click(function() {	$( ".cat8,.cat9,.cat10,.cat11,.cat12,.cat13,.cat1
     // output data of each row
 
     while($row = $result->fetch_assoc()) {
-		echo
+		/*echo
 		"<a href=".$row["website"]." target=_blank><div class= \"tile ".$row["nr"]." ". "cat".$row["catno"]." AD_".$row["ad"]." \">".
-		"<h1>".$row["name"]."</h1>".
+		"<>".$row["name"]."</h1>".
 		"<h4> TLF: ". $row["telephone"]. "</h4>
 		<h4> ". $row["website"]."</h4>
 		<p>".$row["ekstra"]."</p>
-		</div></a>";
+		</div>";
+*/
+    echo "<div class=\"tile ".$row["nr"]." ". "cat".$row["catno"]." AD_".$row["ad"]."\">\n";
+    echo "        <div class=\"card\">\n";
+    echo "          <div class=\"card-image\">\n";
+    //echo "            <img src=\"images/sample-1.jpg\">\n";
+    echo "            <span class=\"card-title\">".$row["name"]."</span>\n";
+    echo "          </div>\n";
+    echo "          <div class=\"card-content\">\n";
+    echo "            <p>".$row["ekstra"]."</p>\n";
+    echo "          </div>\n";
+    echo "          <div class=\"card-action\">\n";
+    echo "            <a href=\"". $row["website"]."\">".$row["website"]."</a>\n";
+    echo "          </div>\n";
+    echo "        </div>\n";
+    echo "      </div>";
     }
 }
 else {
