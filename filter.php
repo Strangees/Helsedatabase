@@ -129,7 +129,7 @@ $( ".lb7" ).click(function() {	$( ".cat8,.cat9,.cat10,.cat11,.cat12,.cat13,.cat1
 		});
 	 </script>
 </section>
-   <?php
+  /* <?php
     /*variables*/
 	  $sql = "SELECT nr,name,telephone,ad,website,catno,ekstra FROM company order by ad desc, catno asc";
       $sqlcat1 = "SELECT nr,name,telephone,website,catno from company where catno = 1";
@@ -137,10 +137,10 @@ $( ".lb7" ).click(function() {	$( ".cat8,.cat9,.cat10,.cat11,.cat12,.cat13,.cat1
 	  $catno= $row["catno"];
 	  $c = "<div class= tile cat1>";
 	 /*Output data from DB*/
-if ($result->num_rows > 0) {
+ //if ($result->num_rows > 0) {
     // output data of each row
 
-    while($row = $result->fetch_assoc()) {
+    /*while($row = $result->fetch_assoc()) {
 		echo
 		"<a href=".$row["website"]." target=_blank><div class= \"tile ".$row["nr"]." ". "cat".$row["catno"]." AD_".$row["ad"]." \">".
 		"<h1>".$row["name"]."</h1>".
@@ -155,6 +155,7 @@ else {
     echo "Ingen resultater";
 }
 $conn->close();
+*/
 	  ?>
 <script>
 	// Document is ready.
@@ -164,6 +165,7 @@ $conn->close();
 		$( "<a href=http://www.handsteady.com>").appendTo (".1");
 		console.info ("websiden har manuelt lagt til paragrafer i cards");
 });
+
 	</script>
   </section>
   <div class="row">
