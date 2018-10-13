@@ -14,11 +14,11 @@ h5{
   color: #00796b;
   }
 .discription{
-    width:60%;
+    width:95%;
     margin:0 auto;
-    height:50px;
     color: white;
-    padding-top:30px;
+    padding-top:6px;
+    padding-bottom: 53px;
 }
 
 body{
@@ -414,6 +414,7 @@ width:0;
 
     label {
         width:18%;
+        margin: 2px;
     }
     .discription{
         padding-bottom:30px;
