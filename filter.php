@@ -11,6 +11,7 @@
 <meta name="Source" CONTENT="http://innovatoriet.hbv.no/getfile.php/13416617/innovatoriet.hbv.no/Filer/8.5.17%20Liste%20leverand%C3%B8rer%20Innovatoriet%281%29.pdf">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/filter.css">
+<link rel="stylesheet" href="css/cards.css">
 <!--<link rel="stylesheet" href="css/materialize.css">-->
 <!--<link rel="stylesheet" href="css/materialize.min.css">-->
 <script src="js/materialize.js" charset="utf-8"></script>
@@ -129,7 +130,8 @@ $( ".lb7" ).click(function() {	$( ".cat8,.cat9,.cat10,.cat11,.cat12,.cat13,.cat1
 		});
 	 </script>
 </section>
-  /* <?php
+<div class="google-cards">
+  <?php
     /*variables*/
 	  $sql = "SELECT nr,name,telephone,ad,website,catno,ekstra FROM company order by ad desc, catno asc";
       $sqlcat1 = "SELECT nr,name,telephone,website,catno from company where catno = 1";
@@ -149,7 +151,16 @@ $( ".lb7" ).click(function() {	$( ".cat8,.cat9,.cat10,.cat11,.cat12,.cat13,.cat1
 		<p>".$row["ekstra"]."</p>
 		</div>";
 */
-    echo "<div class=\"tile ".$row["nr"]." ". "cat".$row["catno"]." AD_".$row["ad"]."\">\n";
+    echo "<div class=\"google-card".$row["nr"]." ". "cat".$row["catno"]." AD_".$row["ad"]. "\">\n";
+    echo "<div class=\"google-card-cover\"><img src=\"https://unsplash.imgix.net/photo-1421930451953-73c5c9ae9abf?fit=crop&amp;fm=jpg&amp;q=75&amp;w=1050\" /></div>\n";
+    echo "<div class=\"google-card-content\">\n";
+    echo "<h3>".$row["name"]."</h3>\n";
+    echo "<p>".$row["ekstra"]."</p>\n";
+    echo "<a class=\"button\" href=\"#\">Les mer</a>\n";
+    echo "</div>\n";
+    echo "</div>\n";
+    echo "</div>\n";
+    /*echo "<div class=\"tile ".$row["nr"]." ". "cat".$row["catno"]." AD_".$row["ad"]."\">\n";
     echo "        <div class=\"card\">\n";
     echo "          <div class=\"card-image\">\n";
     //echo "            <img src=\"images/sample-1.jpg\">\n";
@@ -163,6 +174,7 @@ $( ".lb7" ).click(function() {	$( ".cat8,.cat9,.cat10,.cat11,.cat12,.cat13,.cat1
     echo "          </div>\n";
     echo "        </div>\n";
     echo "      </div>";
+    */
     }
 }
 else {
