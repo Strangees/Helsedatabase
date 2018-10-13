@@ -1,28 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
-.card{
-position: relative;
-margin: 0.5rem 0 1rem 0;
-background-color: #fff;
--webkit-transition: -webkit-box-shadow .25s;
-transition: -webkit-box-shadow .25s;
-transition: box-shadow .25s;
-transition: box-shadow .25s, -webkit-box-shadow .25s;
-border-radius: 2px;
-}
-.card .cardaction{
-background-color: inherit;
-border-top: 1px solid rgba(160, 160, 160, 0.2);
-position: relative;
-padding: 16px 24px;
-}
 
-.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
-    color: #ffab40;
-    margin-right: 24px;
-    -webkit-transition: color .3s ease;
-    transition: color .3s ease;
-    text-transform: uppercase;}
 
 
 a{
@@ -30,15 +8,17 @@ a{
     color:black;
 }
 h5{
-  margin-top: -143px;
+  margin-top: -67px;
   float: right;
+  margin-right: 16px;
+  color: #00796b;
   }
 .discription{
-    width:60%;
+    width:95%;
     margin:0 auto;
-    height:50px;
-    color: white;
-    padding-top:30px;
+    color: black;
+    padding-top:6px;
+    padding-bottom: 16px;
 }
 
 body{
@@ -76,16 +56,19 @@ label {
   width:18%;
   float:left;
   text-align:center;
-  background:#445878;
+  background:#009688;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   color:#ffffff;
   padding:0.5%;
   margin:0.5%;
   margin-bottom:10px;
   cursor:pointer;
-    height: 60px;
-      border-top-right-radius:10px;
+  height: 60px;
+  border-top-right-radius:10px;
   border-bottom-right-radius:10px;
+  text-transform: uppercase;
+  font-family: monospace;
+  font-size: 19px;
 }
 
 .hvr-bounce-to-right {
@@ -110,7 +93,7 @@ label {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #92CDCF;
+  background: #00796b;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transform-origin: 0 50%;
@@ -125,7 +108,7 @@ label {
   border-bottom-right-radius:10px;
 }
 .hvr-bounce-to-right:hover, .hvr-bounce-to-right:focus, .hvr-bounce-to-right:active {
-  color: black;
+  color: white;
     border-top-right-radius:10px;
   border-bottom-right-radius:10px;
 }
@@ -389,9 +372,9 @@ width:0;
 }
 
 .lblchk{
-	background:#92CDCF;
+	background:#00796b;
 	text-decoration-color: white;
-	color:black;
+	color:white;
 
 }
 .AD_TRUE{
@@ -434,6 +417,7 @@ width:0;
 
     label {
         width:18%;
+        margin: 2px;
     }
     .discription{
         padding-bottom:30px;
@@ -477,7 +461,7 @@ width:0;
     }
 
     .discription{
-        padding-bottom:40px;
+        padding-bottom:7px;
         font-size:12px;
     }
     .AD_TRUE{
@@ -499,12 +483,13 @@ width:0;
     }
     label {
         width:100%;
-        height:40px;
+        height:20px;
+        font-size: 13px;
 
     }
 
         .discription{
-        padding-bottom:100px;
+        padding-bottom:7px;
         font-size:10px;
 
         }

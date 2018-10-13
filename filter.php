@@ -7,10 +7,15 @@
 <meta charset="utf-8">
 <meta name="Description" CONTENT="Denne nettsiden er ment for å forenkle hvordan man finner frem til riktig leverandør av diverse hjelpemidler">
 <title>Dabasen for leverandører innen hjelpemidler</title>
-<meta name="Author" CONTENT="Stian Strange, 2017">
+<meta name="Author" CONTENT="SWC, Stranges Web Consult 2018">
 <meta name="Source" CONTENT="http://innovatoriet.hbv.no/getfile.php/13416617/innovatoriet.hbv.no/Filer/8.5.17%20Liste%20leverand%C3%B8rer%20Innovatoriet%281%29.pdf">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="filter.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/filter.css">
+<link rel="stylesheet" href="css/cards.css">
+<!--<link rel="stylesheet" href="css/materialize.css">-->
+<!--<link rel="stylesheet" href="css/materialize.min.css">-->
+<script src="js/materialize.js" charset="utf-8"></script>
+<script src="js/materialize.min.js" charset="utf-8"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript">
 $('document').ready(function () {
@@ -26,7 +31,7 @@ $cat1 = "SELECT catname FROM categories where catno = 1 order by ad asc, catno d
 $username = USERNAME; //defined in conenction.php
 $password = PASSWORD; //defines in connection.php
 // Create connection
-$conn = new mysqli("localhost", $username, $password, "stianstrange_no");
+$conn = new mysqli("localhost", $username, $password, "swc_one");
 // Check connection
 //test
 if ($conn->connect_error) {
@@ -37,7 +42,7 @@ if ($conn->connect_error) {
 <body>
 <!--Container-->
 <section class="container">
-<div class="discription">Denne nettsiden er ment for å forenkle hvordan man finner frem til riktig leverandør av diverse hjelpemidler. Nettsiden er under utvikling. <span>Oppdager du noen feil eller manger på nettsiden kan du sende mail til: <b>stianstrange@gmail.com </b> </div>
+<div class="discription">Denne nettsiden er ment for å forenkle hvordan man finner frem til riktig leverandør av diverse hjelpemidler. Nettsiden er under utvikling. <span>Oppdager du noen feil eller manger på nettsiden kan du sende mail til: <b>stian@swc.one </b> </div>
  <section class="container containerlabel">
  	<label class="lb1 hvr-bounce-to-right">
  	    Spise / drikkehjelpemidler
@@ -125,10 +130,8 @@ $( ".lb7" ).click(function() {	$( ".cat8,.cat9,.cat10,.cat11,.cat12,.cat13,.cat1
 		});
 	 </script>
 </section>
-
-
-
-   <?php
+<div class="google-cards">
+  <?php
     /*variables*/
 	  $sql = "SELECT nr,name,telephone,ad,website,catno,ekstra FROM company order by ad desc, catno asc";
       $sqlcat1 = "SELECT nr,name,telephone,website,catno from company where catno = 1";
@@ -136,22 +139,43 @@ $( ".lb7" ).click(function() {	$( ".cat8,.cat9,.cat10,.cat11,.cat12,.cat13,.cat1
 	  $catno= $row["catno"];
 	  $c = "<div class= tile cat1>";
 	 /*Output data from DB*/
-
-if ($result->num_rows > 0) {
-
+ if ($result->num_rows > 0) {
     // output data of each row
 
     while($row = $result->fetch_assoc()) {
-		echo
+		/*echo
 		"<a href=".$row["website"]." target=_blank><div class= \"tile ".$row["nr"]." ". "cat".$row["catno"]." AD_".$row["ad"]." \">".
-		"<h1>".$row["name"]."</h1>".
+		"<>".$row["name"]."</h1>".
 		"<h4> TLF: ". $row["telephone"]. "</h4>
 		<h4> ". $row["website"]."</h4>
 		<p>".$row["ekstra"]."</p>
-		</div></a>";
+		</div>";
+*/
+    echo "<div class=\"google-card ".$row["nr"]." ". "cat".$row["catno"]." AD_".$row["ad"]. "\">\n";
+    echo "<div class=\"google-card-cover\"><img src=\"https://unsplash.imgix.net/photo-1421930451953-73c5c9ae9abf?fit=crop&amp;fm=jpg&amp;q=75&amp;w=1050\" /></div>\n";
+    echo "<div class=\"google-card-content\">\n";
+    echo "<h3>".$row["name"]."</h3>\n";
+    echo "<p>".$row["ekstra"]."</p>\n";
+    echo "<a class=\"button\" href=\"#\">Les mer</a>\n";
+    echo "</div>\n";
+    echo "</div>\n";
+    /*echo "<div class=\"tile ".$row["nr"]." ". "cat".$row["catno"]." AD_".$row["ad"]."\">\n";
+    echo "        <div class=\"card\">\n";
+    echo "          <div class=\"card-image\">\n";
+    //echo "            <img src=\"images/sample-1.jpg\">\n";
+    echo "            <span class=\"card-title\">".$row["name"]."</span>\n";
+    echo "          </div>\n";
+    echo "          <div class=\"card-content\">\n";
+    echo "            <p>".$row["ekstra"]."</p>\n";
+    echo "          </div>\n";
+    echo "          <div class=\"card-action\">\n";
+    echo "            <a href=\"". $row["website"]."\">".$row["website"]."</a>\n";
+    echo "          </div>\n";
+    echo "        </div>\n";
+    echo "      </div>";
+    */
     }
 }
-
 else {
 
     echo "Ingen resultater";
@@ -159,10 +183,7 @@ else {
 $conn->close();
 
 	  ?>
-
-
-  	   	  	 <!--Manual adding in cards-->
-
+  </div>
 <script>
 	// Document is ready.
 	$.when( $.ready ).then(function()
@@ -172,17 +193,7 @@ $conn->close();
 		console.info ("websiden har manuelt lagt til paragrafer i cards");
 });
 
-
 	</script>
   </section>
-</div>
-
-
-
-
-
-
-
 </body>
-
 </html>

@@ -1,0 +1,72 @@
+body {
+  background: #f2f2f2;
+  font-family: 'Roboto', Arial, Helvetica;
+}
+h1 {
+  font-size: 40px;
+  margin-bottom: 50px;
+  text-align: center;
+  margin-top: 30px;
+}
+.AD_TRUE{
+
+}
+.google-cards {
+  margin: 30px auto;
+}
+.google-cards .google-card {
+  width: 320px;
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.45);
+  background: #fff;
+  margin-bottom: 1.5em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  display: inline-block;
+  min-height: 300px;
+  max-height: 470px;
+}
+.google-cards .google-card .google-card-cover {
+  height: auto;
+}
+.google-cards .google-card .google-card-cover img {
+  width: 100%;
+}
+.google-cards .google-card .google-card-content {
+  padding: 15px;
+  font-size: 14px;
+  color: #333;
+}
+.google-cards .google-card .google-card-content h3 {
+  font-weight: 500;
+  color: #666;
+  margin-bottom: 0.45em;
+  text-transform: uppercase;
+}
+.google-cards .google-card .google-card-content p {
+  line-height: 1.5;
+  max-height: 100px;
+  min-height: 100px;
+}
+.google-cards .google-card .google-card-content .button {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #009688;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 25px;
+}
+.google-cards .google-card .google-card-content .button:hover {
+  background: #00796b;
+}
+
+
+@media (max-width:742px) {
+  .google-cards .google-card .google-card-content p {
+      max-height: 100px;
+      min-height: 1px;
+}
