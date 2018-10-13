@@ -42,7 +42,7 @@ if ($conn->connect_error) {
 <body>
 <!--Container-->
 <section class="container">
-<div class="discription">Denne nettsiden er ment for å forenkle hvordan man finner frem til riktig leverandør av diverse hjelpemidler. Nettsiden er under utvikling. <span>Oppdager du noen feil eller manger på nettsiden kan du sende mail til: <b>stianstrange@gmail.com </b> </div>
+<div class="discription">Denne nettsiden er ment for å forenkle hvordan man finner frem til riktig leverandør av diverse hjelpemidler. Nettsiden er under utvikling. <span>Oppdager du noen feil eller manger på nettsiden kan du sende mail til: <b>stian@swc.one </b> </div>
  <section class="container containerlabel">
  	<label class="lb1 hvr-bounce-to-right">
  	    Spise / drikkehjelpemidler
