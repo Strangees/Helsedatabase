@@ -56,7 +56,7 @@ label {
   width:18%;
   float:left;
   text-align:center;
-  background:#00796b;
+  background:#009688;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   color:#ffffff;
   padding:0.5%;
@@ -90,7 +90,7 @@ label {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #92CDCF;
+  background: #00796b;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transform-origin: 0 50%;
@@ -105,7 +105,7 @@ label {
   border-bottom-right-radius:10px;
 }
 .hvr-bounce-to-right:hover, .hvr-bounce-to-right:focus, .hvr-bounce-to-right:active {
-  color: black;
+  color: white;
     border-top-right-radius:10px;
   border-bottom-right-radius:10px;
 }
