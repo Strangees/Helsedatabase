@@ -64,8 +64,7 @@ h1 {
 }
 
 
-@media (max-width:545px) {
-.google-Cards{
-
-}
+@media (max-width:742px) {
+  .google-cards .google-card .google-card-content p {
+      max-height: 100px;
 }
