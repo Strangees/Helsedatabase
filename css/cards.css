@@ -24,7 +24,8 @@ h1 {
   margin-left: 0.5em;
   margin-right: 0.5em;
   display: inline-block;
-  height: 470px:
+  min-height: 300px;
+  max-height: 470px;
 }
 .google-cards .google-card .google-card-cover {
   height: auto;
