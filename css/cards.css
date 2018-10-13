@@ -46,7 +46,8 @@ h1 {
 }
 .google-cards .google-card .google-card-content p {
   line-height: 1.5;
-  height: 100px;
+  max-height: 100px;
+  min-height: 100px;
 }
 .google-cards .google-card .google-card-content .button {
   display: block;
@@ -67,4 +68,5 @@ h1 {
 @media (max-width:742px) {
   .google-cards .google-card .google-card-content p {
       max-height: 100px;
+      min-height: 1px;
 }
