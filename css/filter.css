@@ -8,8 +8,10 @@ a{
     color:black;
 }
 h5{
-  margin-top: -143px;
+  margin-top: 0px;
   float: right;
+  margin-right: 16px;
+  color: #00796b;
   }
 .discription{
     width:60%;
