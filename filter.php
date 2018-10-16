@@ -149,14 +149,15 @@ $( ".lb7" ).click(function() {	$( ".cat8,.cat9,.cat10,.cat11,.cat12,.cat13,.cat1
 		"<h4> TLF: ". $row["telephone"]. "</h4>
 		<h4> ". $row["website"]."</h4>
 		<p>".$row["ekstra"]."</p>
-		</div>";images\71.png
+		</div>";
 */
+    $nrid = "images/".$row["nr"].".png"
     echo "<div class=\"google-card ".$row["nr"]." ". "cat".$row["catno"]." AD_".$row["ad"]. "\">\n";
-    echo "<div class=\"google-card-cover\"><img src=\images\"".$row["nr"].".png/></div>\n";
+    echo "<div class=\"google-card-cover\"><img src=/$nrid/></div>\n";
     echo "<div class=\"google-card-content\">\n";
     echo "<h3>".$row["name"]."</h3>\n";
     echo "<p>".$row["ekstra"]."</p>\n";
-    echo "<a class=\"button\" href=".$row["ekstra"].">Les mer</a>\n";
+    echo "<a class=\"button\" href=".$row["website"].">Les mer</a>\n";
     echo "</div>\n";
     echo "</div>\n";
     /*echo "<div class=\"tile ".$row["nr"]." ". "cat".$row["catno"]." AD_".$row["ad"]."\">\n";
