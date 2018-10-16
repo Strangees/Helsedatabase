@@ -151,9 +151,9 @@ $( ".lb7" ).click(function() {	$( ".cat8,.cat9,.cat10,.cat11,.cat12,.cat13,.cat1
 		<p>".$row["ekstra"]."</p>
 		</div>";
 */
-    $nrid = "images/".$row["nr"].".png"
+    /*$nrid = "images/".$row["nr"].".png"*/
     echo "<div class=\"google-card ".$row["nr"]." ". "cat".$row["catno"]." AD_".$row["ad"]. "\">\n";
-    echo "<div class=\"google-card-cover\"><img src=/$nrid/></div>\n";
+    echo "<div class=\"google-card-cover\"><img src=/images/".$row["nr"].".png/></div>\n";
     echo "<div class=\"google-card-content\">\n";
     echo "<h3>".$row["name"]."</h3>\n";
     echo "<p>".$row["ekstra"]."</p>\n";
